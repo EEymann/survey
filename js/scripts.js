@@ -3,10 +3,14 @@ $(document).ready(function() {
     var person1Input = $("input#person1").val();
     $(".person1").text(person1Input);
 
-    var beverage = $("#beverage").val();
-    $("#beverage").text(beverage);
+    var selectedBeverage = $('#beverage option:selected').text();
+    $(".favoriteBeverage").text(selectedBeverage);
 
+    var selectedFood = $('#food option:selected').text();
+    $(".favoriteFood").text(selectedFood);
 
+    var selectedColor = $('#color').val();
+    $(".favoriteColor").text(selectedColor);
 
     $("#story").show();
 
@@ -14,4 +18,3 @@ $(document).ready(function() {
   });
 });
 
-var favoriteColor = $("#color").val();
